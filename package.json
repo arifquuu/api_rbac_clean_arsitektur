@@ -1,0 +1,22 @@
+{
+  "name": "api_rbac_praktek",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "start": "bun run index.ts",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:seed": "bun run prisma/seed.ts",
+    "db:studio": "bunx prisma studio",
+    "db:generate": "bunx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "hono": "^4.0.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "prisma": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}
